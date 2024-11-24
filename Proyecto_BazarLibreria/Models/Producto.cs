@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace Proyecto_BazarLibreria.Models
 {
     public class Producto
     {
+        [Key]
         public int Codigo { get; set; } // PK
         public string Nombre { get; set; }
         public decimal Precio { get; set; }
@@ -20,6 +22,7 @@ namespace Proyecto_BazarLibreria.Models
     }
     public class Imagen
     {
+
         public int Id { get; set; } // PK
         public string Url { get; set; }
         public int ProductoCodigo { get; set; } // FK
