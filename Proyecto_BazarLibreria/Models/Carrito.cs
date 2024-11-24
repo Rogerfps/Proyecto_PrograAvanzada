@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -17,6 +18,7 @@ namespace Proyecto_BazarLibreria.Models
     }
     public class CarritoProducto
     {
+        [Key]
         public int CarritoId { get; set; } // FK
         public Carrito Carrito { get; set; }
         public int ProductoCodigo { get; set; } // FK

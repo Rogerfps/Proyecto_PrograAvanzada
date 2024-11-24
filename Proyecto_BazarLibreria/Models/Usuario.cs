@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace Proyecto_BazarLibreria.Models
 {
     public class Usuario
     {
+        [Key]
         public int Codigo { get; set; } // PK
         public string Nombre { get; set; }
         public string Contraseña { get; set; } // Encriptada
